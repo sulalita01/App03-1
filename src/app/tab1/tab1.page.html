@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="sky">
+    <ion-title color="light">
+      Component
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-item>
+  <ion-label>
+    1.Action Sheets
+  </ion-label>
+  <ion-button id="open-action-sheet">Open</ion-button>
+  <ion-action-sheet trigger="open-action-sheet" header="Actions" [buttons]="actionSheetButtons"></ion-action-sheet>
+</ion-item>
+
+<ion-item>
+    <ion-label>
+      2.Alerts Buttons
+    </ion-label>
+  <ion-button id="present-alert">Click Me</ion-button>
+  <ion-alert
+    trigger="present-alert"
+    header="Alert!"
+    [buttons]="alertButtons">
+  </ion-alert>
+</ion-item>
+
+<ion-item>
+    <ion-label>
+      3.Alerts Input
+    </ion-label>
+    <ion-button id="present-alert1">Click Me</ion-button>
+  <ion-alert
+      trigger="present-alert1"
+      header="เพิ่มสมาชิก"
+      [buttons]="alertButtons1"
+      [inputs]="alertInputs">
+  </ion-alert>
+</ion-item>
+
+<ion-item>
+    <ion-label>
+      4.Badge
+    </ion-label>
+  <ion-badge >กำลังตรวจสอบ...</ion-badge>
+</ion-item>
+
+
+<ion-item>
+    <ion-label>
+      5.Checkbox
+    </ion-label>
+  <ion-checkbox slot="end"></ion-checkbox>
+  <ion-checkbox slot="end"></ion-checkbox>
+  <ion-checkbox slot="end"></ion-checkbox>
+</ion-item>
+
+</ion-content>
